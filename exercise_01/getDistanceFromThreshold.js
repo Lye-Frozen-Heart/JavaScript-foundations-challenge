@@ -4,3 +4,15 @@
  * input: number (threshold)
  * output: number
  */
+/**
+ * Gets the distance between two numbers
+ * @param {number} number
+ * @param {number} threshold
+ * @returns number
+ */
+const getDistanceFromThreshold = function (number, threshold) {
+  if (number > threshold) return Math.abs(number - threshold);
+  if (number < threshold) return "First number must be greater than threshold";
+};
+
+export default getDistanceFromThreshold;
