@@ -9,7 +9,7 @@
  * @returns {number} - The total number of words in the input string.
  */
 function getTotalWordsFromString(sentence) {
-  let words = sentence.split(/\s+/);
+  let words = sentence.split(/[^\p{L}]+/u);
   let filteredWords = words.filter((word) => word.length > 0);
   return filteredWords.length;
 }
