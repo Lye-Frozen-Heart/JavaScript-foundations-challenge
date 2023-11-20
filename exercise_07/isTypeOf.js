@@ -14,7 +14,9 @@
  * @returns {boolean} - True if the type matches, false otherwise.
  */
 const isTypeOf = function (valueToBeChecked, type) {
-  if (type === Array.isArray() && Array.isArray(valueToBeChecked)) return true;
+  if (type === "array") {
+    return Array.isArray(valueToBeChecked);
+  }
   return type === typeof valueToBeChecked;
 };
 export default isTypeOf;
