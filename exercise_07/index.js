@@ -1,4 +1,3 @@
-//import isTypeOf' and execute
 import isTypeOf from "./isTypeOf.js";
 
 console.log(`Check a string: ${isTypeOf("Hi there", "string")}`);
@@ -20,16 +19,16 @@ console.log(`Check a boolean if a number: ${isTypeOf(true, "number")}`);
 console.log(`Check a boolean if a string: ${isTypeOf(false, "string")}`);
 
 console.log(
-  `Check a array if a boolean: ${isTypeOf(["Apple", "Banana"], "boolean")}`
+  `Check a array if a boolean: ${isTypeOf(["Apple", "Banana"], "boolean")}`,
 );
 
 console.log(
-  `Check a array if a number: ${isTypeOf(["Apple", "Banana"], "number")}`
+  `Check a array if a number: ${isTypeOf(["Apple", "Banana"], "number")}`,
 );
 
 console.log(
-  `Check a array if a array: ${isTypeOf(["Apple", "Banana"], Array.isArray())}`
+  `Check a array if a array: ${isTypeOf(["Apple", "Banana"], Array.isArray())}`,
 );
 console.log(
-  `Check a array if a string: ${isTypeOf(["Apple", "Banana"], "Hello")}`
+  `Check a array if a string: ${isTypeOf(["Apple", "Banana"], "Hello")}`,
 );

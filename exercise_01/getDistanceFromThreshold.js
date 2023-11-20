@@ -8,7 +8,7 @@
  * Gets the distance between two numbers
  * @param {number} number
  * @param {number} threshold
- * @returns number
+ * @returns number || string
  */
 const getDistanceFromThreshold = function (number, threshold) {
   if (number > threshold) return Math.abs(number - threshold);

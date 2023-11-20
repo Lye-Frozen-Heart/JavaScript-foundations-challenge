@@ -9,6 +9,7 @@
  * @returns {number} - A rounded random number within the range [0, limit).
  */
 function generateRandomNumberInRange(limit) {
+  // return Math.round(Math.random()*limit)
   let randomNumber = Math.round(Math.random() * limit);
   return randomNumber;
 }
