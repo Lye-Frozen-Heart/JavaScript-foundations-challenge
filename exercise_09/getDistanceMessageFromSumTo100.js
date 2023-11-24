@@ -1,4 +1,5 @@
 import generateRandomNumberInRange from "../exercise_03/generateRandomNumberInRange.js";
+import isGreaterThan from "../exercise_04/isGreaterThan.js";
 /** 
  * Write JS function "getDistanceMessageFromSumTo100" to generate a random number (in between 0-100) and sum it to given number
   - if sum result exceeds 100, then return message "Sum with value N exceeds in N from number 100"
@@ -28,8 +29,8 @@ import generateRandomNumberInRange from "../exercise_03/generateRandomNumberInRa
  * @returns {string}
  */
 const getDistanceMessageFromSumTo100 = function (value) {
-  let randomNumber = generateRandomNumberInRange(100);
-  return randomNumber + value > 100
+  let randomResult = generateRandomNumberInRange(100) + value;
+  return isGreaterThan(randomResult, 100)
     ? "Sum with value N exceeds in N from number 100"
     : "Sum with value N is left in N from number 100";
 };

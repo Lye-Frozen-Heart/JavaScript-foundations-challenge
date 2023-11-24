@@ -1,7 +1,11 @@
 import transformCollectionToString from "./transformCollectionToString.js";
 
-let collectionNotEmpty = ["apple", "grapes", "strawberries"];
-console.log(transformCollectionToString(collectionNotEmpty));
+let collectionNotEmpty = transformCollectionToString([
+  "apple",
+  "grapes",
+  "strawberries",
+]);
+console.log(collectionNotEmpty);
 
-let collectionEmpty = [];
-console.log(transformCollectionToString(collectionEmpty));
+let collectionEmpty = transformCollectionToString([]);
+console.log(collectionEmpty);
