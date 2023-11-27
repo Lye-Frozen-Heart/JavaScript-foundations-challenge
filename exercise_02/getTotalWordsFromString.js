@@ -9,6 +9,6 @@
  * @returns {number} - The total number of words in the input string.
  */
 function getTotalWordsFromString(sentence) {
-  return sentence.split("").length;
+  return sentence.split(" ").length;
 }
 export default getTotalWordsFromString;
